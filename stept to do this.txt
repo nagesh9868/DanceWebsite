@@ -1,0 +1,26 @@
+-1. git config --global user.name Nagesh
+
+0. git config --global user.email "nageshwarsharma1990@gmail.com"
+
+1. touch .gitignore - add the file or folder name which you do not want to move on github
+
+2. git init - initialising 
+
+3. git add . - it will process the files to staging area
+
+4. git commit -m "Initial Commit"
+
+5 git status  - it just to chekc that we are clean on the working tree
+
+6. ssh-keygen -t rsa -b 4096 -C "nageshwarsharma1990@gmail.com"
+
+7. tail <path to id_rsa.pub> - Add this key to your GitHub account
+
+8. git remote add origin <ssh url.git>
+
+9. git push  origin master
+
+
+
+
+
