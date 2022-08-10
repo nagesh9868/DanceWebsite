@@ -1,0 +1,65 @@
+//- index.pug
+doctype html
+html
+  head
+    Title 
+      |Nagesh Dance Academny
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/logo.jpg", alt="Nagesh's Dance")
+                | NDA
+            li #[a(href = "/") Home]
+            li #[a(href = "/") About]
+            li #[a(href = "/") Services]
+            li #[a(href = "/") Class Info]
+            li #[a(href = "/") Contact Us]
+
+    section#introSection
+        //- img(src='./BG1.jpg')
+        div| Welcome to Nagesh Dance Academy
+        div.small| Eat Sleep Dance Repeat
+
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box 
+                div.card-img 
+                    img(src="/static/card.jpg", alt="")
+                div.card-content 
+                    p This is the best dance academy of the universe
+        div.card 
+            h3  Dance the way you Like
+            div.card-box 
+                div.card-img 
+                    img(src="/static/card.jpg", alt="")
+                div.card-content 
+                    p This is the best dance academy of the universe
+        div.card 
+            h3 Expert Teaching
+            div.card-box 
+                div.card-img 
+                    img(src="/static/card.jpg", alt="")
+                div.card-content 
+                    p This is the best dance academy of the universe
+         
+    section#sponsorsSection
+        h3 Our Sponsors
+        div#sponsors 
+            img(src="/static/clogo1.png", alt="sponsor Image", Class= "spImage")
+            img(src="/static/clogo2.png", alt="sponsor Image", Class= "spImage")
+            img(src="/static/clogo3.png", alt="sponsor Image", Class= "spImage")
+            img(src="/static/clogo4.png", alt="sponsor Image", Class= "spImage")
+            img(src="/static/clogo5.png", alt="sponsor Image", Class= "spImage")
+            
+
+    footer#footer
+        | Copyright (c) 2019 NageshDanceAcademy | Allright reserved
+
+    script
+      include ../static/script.js
+

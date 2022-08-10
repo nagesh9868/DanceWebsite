@@ -1,0 +1,47 @@
+extends base.pug
+
+block scripts
+    script(src = '/static/index.js')
+
+block style
+    style
+        include ../static/style.css
+block content   
+    section#introSection
+        //- img(src='./BG1.jpg')
+        div| Welcome to Nagesh Dance Academy
+        div.small| Eat Sleep Dance Repeat
+
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box 
+                div.card-img 
+                    img(src="/static/card.jpg", alt="")
+                div.card-content 
+                    p This is the best dance academy of the universe
+        div.card 
+            h3  Dance the way you Like
+            div.card-box 
+                div.card-img 
+                    img(src="/static/card.jpg", alt="")
+                div.card-content 
+                    p This is the best dance academy of the universe
+        div.card 
+            h3 Expert Teaching
+            div.card-box 
+                div.card-img 
+                    img(src="/static/card.jpg", alt="")
+                div.card-content 
+                    p This is the best dance academy of the universe
+         
+    section#sponsorsSection
+        h3 Our Sponsors
+        div#sponsors 
+            img(src="/static/clogo1.png", alt="sponsor Image", Class= "spImage")
+            img(src="/static/clogo2.png", alt="sponsor Image", Class= "spImage")
+            img(src="/static/clogo3.png", alt="sponsor Image", Class= "spImage")
+            img(src="/static/clogo4.png", alt="sponsor Image", Class= "spImage")
+            img(src="/static/clogo5.png", alt="sponsor Image", Class= "spImage")
+            
